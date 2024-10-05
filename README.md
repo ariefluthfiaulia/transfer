@@ -89,9 +89,17 @@ The Money Transfer APIs provide a way to validate bank accounts, execute money t
     ```
 
 ## Mock API Endpoints
-- Account Validation Mock API: `URL: https://66ffbde14da5bd237551c3fe.mockapi.io/api/v1/accounts?accountNumber=68351553&accountOwner=Mamie%20Nader`
+- Account Validation Mock/Get Account By Account Number And Account Owner API: [GET] `URL: https://66ffbde14da5bd237551c3fe.mockapi.io/api/v1/accounts?accountNumber=68351553&accountOwner=Mamie%20Nader`
 
-- Transfer Mock API: `URL: https://66ffbde14da5bd237551c3fe.mockapi.io/api/v1/transfer`
+- Transfer Mock API: [POST] `URL: https://66ffbde14da5bd237551c3fe.mockapi.io/api/v1/transfer`
+  - Request Body:
+    ```json
+    {
+      "sourceAaccount": "68351553",
+      "destinationAccount": "01075277",
+      "amount": 50000
+    }
+    ```
 
 ## Database Schema
 The database used for storing transaction data is PostgreSQL. The following schema can be used for the transactions:
