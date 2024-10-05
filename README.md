@@ -129,6 +129,11 @@ CREATE TABLE transfers (
 - Navigate to the project directory: `cd money-transfer-api`
 - Install dependencies: `mvn clean install`
 - Configure your PostgreSQL database in the 'application.properties'
+- Make sure you have installed PostgreSQL on your local computer.
+- Create a database named "postgres".
+- The default credentials for this application are:
+  - Username: postgres
+  - Password: postgres
 
 ## Running the Application
 - To run the application, use the following command: `mvn spring-boot:run`
